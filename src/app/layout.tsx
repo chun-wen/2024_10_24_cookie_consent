@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Script from "next/script";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -26,7 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="03f0e184-e44f-4340-81e7-97943dce5919" data-blockingmode="auto" type="text/javascript"/>
+      {/* <Script
+        id="Cookiebot"
+        src="https://consent.cookiebot.com/uc.js"
+        data-cbid="03f0e184-e44f-4340-81e7-97943dce5919"
+        data-blockingmode="auto"
+        type="text/javascript"
+      /> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
